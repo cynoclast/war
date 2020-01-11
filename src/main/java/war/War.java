@@ -12,32 +12,55 @@ import java.util.Map;
  */
 public class War {
 
+    /**
+     * The card pile that would be in the middle of the table.
+     */
     private List<Card> pile = new LinkedList<>();
 
+    /**
+     * The players.
+     */
     private List<Player> players = new LinkedList<>();
 
     public static void main(String[] args) {
+        if (args.length != 3) {
+            System.out.println("Usage: war.War <number of suits> <number of ranks> <number of players>");
+            System.exit(1);
+        }
         War war = new War();
-        war.play(4, 13, 5);
+//        war.play(4, 13, 2);
+        war.play(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
     }
 
     /**
+     * Simulates a 'war' card game.
      * Notes:
      * * If we have an odd number of players the first player will have 1 more card than the other players
      * * If two players both tie for the highest card played, all players enter 'war', even if third or other players would have lost
+     * * If a player enters into 'war' but has insufficient cards to put down, they'll be removed from the game (lose)
      *
-     * @param numberOfSuits
-     * @param numberOfRanks
-     * @param numberOfPlayers
+     * @param numberOfSuits   the number of suits in the deck
+     * @param numberOfRanks   the number of ranks in the deck
+     * @param numberOfPlayers the number of players in the game
      */
     public void play(int numberOfSuits, int numberOfRanks, int numberOfPlayers) {
 
         if (numberOfRanks == 1 && numberOfSuits > 1 && numberOfPlayers > 1) {
-            System.out.println("\nA deck of only 1 rank will cause infinite war. (The only winning move is not to play.)");
+            System.err.println("\nA deck of only 1 rank will cause infinite war/a draw. (The only winning move is not to play.)");
             System.exit(0);
         }
 
         int numberOfCards = numberOfSuits * numberOfRanks;
+
+        if (numberOfCards <= 0) {
+            System.err.println("\nMust have some cards in the deck.");
+            System.exit(1);
+        }
+
+        if (numberOfPlayers < 1) {
+            System.err.println("\nMust have at least one player.");
+            System.exit(1);
+        }
 
         // create players
         for (int i = 0; i < numberOfPlayers; i++) {
@@ -57,21 +80,20 @@ public class War {
             player.collect(deck.deal());
         }
 
-
-        // if we only have one player, they'll win
+        // if we only have one player, they'll win immediately
         Player winner = findWinner(numberOfCards);
 
         // play
-        Map<Card, Player> playerCards = new HashMap<>();
+        Map<Card, Player> cardsInPlay = new HashMap<>();
         while (winner == null) {
             // play a round
             for (Player currentPlayer : players) {
                 if (currentPlayer.show() != null) {
-                    playerCards.put(currentPlayer.show(), currentPlayer);
+                    cardsInPlay.put(currentPlayer.show(), currentPlayer);
                 }
             }
 
-            Player winnerOfRound = findWinnerOfRound(playerCards);
+            Player winnerOfRound = findWinnerOfRound(cardsInPlay);
             if (winnerOfRound == null) {
                 //war
                 for (Player currentPlayer : players) {
@@ -100,7 +122,7 @@ public class War {
                 winnerOfRound.collect(pile);
                 pile.clear();
             }
-            playerCards.clear();
+            cardsInPlay.clear();
 
             removePlayersWithNoCards();
 
@@ -132,6 +154,12 @@ public class War {
         }
     }
 
+    /**
+     * Uses a map of card to player instead of player to card since the winner is determined by card this makes the lookup easy.
+     *
+     * @param playerCards the cards in play for the current round
+     * @return the winner of the round, or null if there's a tie for the highest card by rank
+     */
     private Player findWinnerOfRound(Map<Card, Player> playerCards) {
         if (playerCards == null) {
             return null;
@@ -141,7 +169,6 @@ public class War {
         List<Card> cards = new ArrayList<>(playerCards.keySet());
         cards.sort(new SortByRankComparator().reversed());
 
-        // if there's no tie for rank
         Card highest = cards.get(0);
 
         if (playerCards.size() == 1) {
@@ -150,7 +177,7 @@ public class War {
 
         Card checkCard = cards.get(1); // since these are sorted if there's a tie it will be the next card
         if (checkCard.getRank() == highest.getRank()) {
-            return null; // go to war
+            return null; // go to war (even if there are other possible ties)
         } else {
             return playerCards.get(highest);
         }

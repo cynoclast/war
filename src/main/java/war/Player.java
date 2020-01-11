@@ -73,7 +73,7 @@ public class Player {
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SIMPLE_STYLE).
                 append("ordinal", ordinal).
-                append("rank", hand).
+                append("hand", hand).
                 toString();
     }
 

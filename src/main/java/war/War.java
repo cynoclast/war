@@ -18,7 +18,7 @@ public class War {
 
     public static void main(String[] args) {
         War war = new War();
-        war.play(4, 13, 2);
+        war.play(4, 13, 5);
     }
 
     /**
@@ -94,10 +94,6 @@ public class War {
                 for (Player currentPlayer : players) {
                     if (currentPlayer.show() != null) {
                         pile.add(currentPlayer.play()); // winner takes all cards that were in play
-//                        winnerOfRound.collect(currentPlayer.play());
-                    } else {
-                        // trim the empty loop
-                        players.remove(currentPlayer.getOrdinal());
                     }
                 }
                 Collections.shuffle(pile); // attempt to prevent infinite games and simulate people picking up piles of cards
@@ -105,6 +101,8 @@ public class War {
                 pile.clear();
             }
             playerCards.clear();
+
+            removePlayersWithNoCards();
 
             winner = findWinner(numberOfCards);
 
@@ -118,6 +116,19 @@ public class War {
 
         if (winner != null) {
             declareWinner(winner);
+        }
+    }
+
+    private void removePlayersWithNoCards() {
+        List<Integer> playersWithNoCards = new ArrayList<>();
+        for (Player player : players) {
+            if (player.show() == null) {
+                playersWithNoCards.add(player.getOrdinal());
+            }
+        }
+        for (Integer playerOrdinal : playersWithNoCards) {
+            //noinspection SuspiciousMethodCalls
+            players.remove(playerOrdinal);
         }
     }
 

@@ -1,8 +1,5 @@
 package war;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -14,9 +11,6 @@ import java.util.List;
  */
 public class ArbitraryDeck implements Deck {
 
-    @Getter
-    @Setter
-    // These ^ didn't work with gradle 6...?
     private List<Card> cards = new ArrayList<>();
 
     public List<Card> getCards() {
@@ -46,5 +40,4 @@ public class ArbitraryDeck implements Deck {
         cards.remove(0);
         return topCard;
     }
-
 }

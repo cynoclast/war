@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abfbf438-cb91-44a9-a304-8943589a5bbb" name="Default Changelist" comment="" />
+    <list default="true" id="abfbf438-cb91-44a9-a304-8943589a5bbb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/ArbitraryDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/war/ArbitraryDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/war/War.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +85,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
   <component name="ProjectId" id="1WDeUmlnhiNg1yuiuWxm8SUXytV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -271,22 +279,26 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="487" y="169" key="#com.intellij.ide.util.MemberChooser/54.23.1386.877@54.23.1386.877" timestamp="1578707446123" />
-    <state width="1344" height="289" key="GridCell.Tab.0.bottom" timestamp="1578708125810">
+    <state x="175" y="141" width="1186" height="677" key="DiffContextDialog" timestamp="1578709193982">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="289" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578708125810" />
-    <state width="1344" height="289" key="GridCell.Tab.0.center" timestamp="1578708125809">
+    <state x="175" y="141" width="1186" height="677" key="DiffContextDialog/54.23.1386.877@54.23.1386.877" timestamp="1578709193982" />
+    <state width="1013" height="289" key="GridCell.Tab.0.bottom" timestamp="1578709090258">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="289" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1578708125809" />
-    <state width="1344" height="289" key="GridCell.Tab.0.left" timestamp="1578708125809">
+    <state width="1013" height="289" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578709090258" />
+    <state width="1013" height="289" key="GridCell.Tab.0.center" timestamp="1578709090257">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="289" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1578708125809" />
-    <state width="1344" height="289" key="GridCell.Tab.0.right" timestamp="1578708125810">
+    <state width="1013" height="289" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1578709090257" />
+    <state width="1013" height="289" key="GridCell.Tab.0.left" timestamp="1578709090256">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="289" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1578708125810" />
+    <state width="1013" height="289" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1578709090256" />
+    <state width="1013" height="289" key="GridCell.Tab.0.right" timestamp="1578709090257">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state width="1013" height="289" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1578709090257" />
     <state width="1344" height="276" key="GridCell.Tab.1.bottom" timestamp="1578707873388">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -307,6 +319,14 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="248" y="63" key="SettingsEditor/54.23.1386.877@54.23.1386.877" timestamp="1578690669327" />
+    <state x="154" y="123" width="1186" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1578709118665">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="154" y="123" width="1186" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/54.23.1386.877@54.23.1386.877" timestamp="1578709118665" />
+    <state x="530" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578709118622">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="530" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.23.1386.877@54.23.1386.877" timestamp="1578709118622" />
     <state x="844" y="214" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578695910535">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -326,7 +346,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/war/War.java</url>
-          <line>139</line>
+          <line>150</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

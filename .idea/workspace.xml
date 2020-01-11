@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abfbf438-cb91-44a9-a304-8943589a5bbb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/SortByRankComparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/WarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/ArbitraryDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/ArbitraryDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/SortByRankComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/SortByRankComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/war/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/war/ArbitraryDeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/ArbitraryDeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/war/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/PlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="327" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -42,19 +42,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="war" type="f1a62948:ProjectNode" />
                 <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="war" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="war" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
-                <item name="main" type="396b929e:GradleViewContributor$SourceSetNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -90,8 +77,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -123,6 +110,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.cynoclast.war" />
       <recent name="war" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -136,7 +124,7 @@
     <configuration name="War" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cynoclast.war.War" />
       <module name="war.main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PROGRAM_PARAMETERS" value="4 13 2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cynoclast.war.*" />
@@ -153,12 +141,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArbitraryDeckTest.testCreate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlayerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;war.ArbitraryDeckTest.testCreate&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cynoclast.war.PlayerTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -173,12 +161,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ArbitraryDeckTest.testShuffle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PlayerTest.testToString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;war.ArbitraryDeckTest.testShuffle&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cynoclast.war.PlayerTest.testToString&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -193,12 +181,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlayerTest.testCollect" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'war.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;war.PlayerTest.testCollect&quot;" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -213,12 +201,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlayerTest.testPlay" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WarTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;war.PlayerTest.testPlay&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cynoclast.war.WarTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -249,13 +237,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.War" />
+      <item itemvalue="Gradle.PlayerTest" />
+      <item itemvalue="Gradle.PlayerTest.testToString" />
+      <item itemvalue="Gradle.Tests in 'war.test'" />
+      <item itemvalue="Gradle.WarTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.War" />
-        <item itemvalue="Gradle.PlayerTest.testPlay" />
-        <item itemvalue="Gradle.PlayerTest.testCollect" />
-        <item itemvalue="Gradle.ArbitraryDeckTest.testCreate" />
-        <item itemvalue="Gradle.ArbitraryDeckTest.testShuffle" />
+        <item itemvalue="Gradle.Tests in 'war.test'" />
+        <item itemvalue="Gradle.WarTest" />
+        <item itemvalue="Gradle.PlayerTest.testToString" />
+        <item itemvalue="Gradle.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -296,51 +291,63 @@
       <option name="project" value="LOCAL" />
       <updated>1578711545341</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moved stuff to more standard packages&#10;updated docs&#10;deleted gradle base App classes">
+      <created>1578712044284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578712044284</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removes lombok stuff that didn't work&#10;fixes concurrent modification exception" />
     <MESSAGE value="updates some docs&#10;adds boundary conditions&#10;clarifies a variable&#10;corrects a typo&#10;adds gradle.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates some docs&#10;adds boundary conditions&#10;clarifies a variable&#10;corrects a typo&#10;adds gradle.properties" />
+    <MESSAGE value="moved stuff to more standard packages&#10;updated docs&#10;deleted gradle base App classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved stuff to more standard packages&#10;updated docs&#10;deleted gradle base App classes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="127" key="#Project_Structure" timestamp="1578689002203">
+    <state x="347" y="127" key="#Project_Structure" timestamp="1578714867333">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="347" y="127" key="#Project_Structure/54.23.1386.877@54.23.1386.877" timestamp="1578689002203" />
-    <state x="487" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1578707446123">
+    <state x="347" y="127" key="#Project_Structure/54.23.1386.877@54.23.1386.877" timestamp="1578714867333" />
+    <state x="211" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578716075875">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="487" y="169" key="#com.intellij.ide.util.MemberChooser/54.23.1386.877@54.23.1386.877" timestamp="1578707446123" />
+    <state x="211" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/54.23.1386.877@54.23.1386.877" timestamp="1578716075875" />
+    <state x="487" y="169" key="#com.intellij.ide.util.MemberChooser" timestamp="1578712207689">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="487" y="169" key="#com.intellij.ide.util.MemberChooser/54.23.1386.877@54.23.1386.877" timestamp="1578712207689" />
     <state x="513" y="328" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578711886938">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="513" y="328" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/54.23.1386.877@54.23.1386.877" timestamp="1578711886938" />
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578711544924">
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578712043891">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578711544924" />
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578712043891" />
     <state x="175" y="141" width="1186" height="677" key="DiffContextDialog" timestamp="1578709193982">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="175" y="141" width="1186" height="677" key="DiffContextDialog/54.23.1386.877@54.23.1386.877" timestamp="1578709193982" />
-    <state width="1122" height="289" key="GridCell.Tab.0.bottom" timestamp="1578710146011">
+    <state width="1344" height="342" key="GridCell.Tab.0.bottom" timestamp="1578716253104">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="289" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578710146011" />
-    <state width="1122" height="289" key="GridCell.Tab.0.center" timestamp="1578710146010">
+    <state width="1344" height="342" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578716253104" />
+    <state width="1344" height="342" key="GridCell.Tab.0.center" timestamp="1578716253104">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="289" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1578710146010" />
-    <state width="1122" height="289" key="GridCell.Tab.0.left" timestamp="1578710146009">
+    <state width="1344" height="342" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1578716253104" />
+    <state width="1344" height="342" key="GridCell.Tab.0.left" timestamp="1578716253103">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="289" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1578710146009" />
-    <state width="1122" height="289" key="GridCell.Tab.0.right" timestamp="1578710146010">
+    <state width="1344" height="342" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1578716253103" />
+    <state width="1344" height="342" key="GridCell.Tab.0.right" timestamp="1578716253104">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="289" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1578710146010" />
+    <state width="1344" height="342" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1578716253104" />
     <state width="1122" height="276" key="GridCell.Tab.1.bottom" timestamp="1578709670158">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -361,6 +368,10 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="248" y="63" key="SettingsEditor/54.23.1386.877@54.23.1386.877" timestamp="1578690669327" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1578714982849">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/54.23.1386.877@54.23.1386.877" timestamp="1578714982849" />
     <state x="347" y="201" key="Vcs.Push.Dialog.v2" timestamp="1578709250864">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -377,14 +388,14 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="530" y="385" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.23.1386.877@54.23.1386.877" timestamp="1578709118622" />
-    <state x="844" y="214" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578695910535">
+    <state x="844" y="214" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578712666485">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="844" y="214" key="com.intellij.testIntegration.createTest.CreateTestDialog/54.23.1386.877@54.23.1386.877" timestamp="1578695910535" />
-    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1578711404885">
+    <state x="844" y="214" key="com.intellij.testIntegration.createTest.CreateTestDialog/54.23.1386.877@54.23.1386.877" timestamp="1578712666485" />
+    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1578714050195">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup/54.23.1386.877@54.23.1386.877" timestamp="1578711404885" />
+    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup/54.23.1386.877@54.23.1386.877" timestamp="1578714050195" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -406,5 +417,14 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/war$Tests_in__war_test_.ic" NAME="Tests in 'war.test' Coverage Results" MODIFIED="1578714442347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/war$PlayerTest_testToString.ic" NAME="PlayerTest.testToString Coverage Results" MODIFIED="1578713648887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/war$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1578713488857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/war$SortByRankComparatorTest.ic" NAME="SortByRankComparatorTest Coverage Results" MODIFIED="1578712918907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/war$Tests_in__com_cynoclast_war_.ic" NAME="Tests in 'com.cynoclast.war' Coverage Results" MODIFIED="1578712609726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/war$WarTest.ic" NAME="WarTest Coverage Results" MODIFIED="1578714417372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/war$SortByRankComparatorTest_testCompare.ic" NAME="SortByRankComparatorTest.testCompare Coverage Results" MODIFIED="1578712810278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

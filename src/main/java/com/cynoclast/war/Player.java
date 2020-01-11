@@ -81,16 +81,9 @@ public class Player {
         return ordinal;
     }
 
-    public void setOrdinal(int ordinal) {
-        this.ordinal = ordinal;
-    }
-
     public List<Card> getHand() {
         return hand;
     }
 
-    public void setHand(List<Card> hand) {
-        this.hand = hand;
-    }
 }
 

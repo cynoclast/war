@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 /**
  * @author Trampas Kirk
@@ -13,7 +14,27 @@ import static org.junit.Assert.assertEquals;
 public class PlayerTest {
 
     @Test
-    public void testCollect() throws Exception {
+    public void testGetOrdinal() {
+        Player player = new Player(0);
+        assertEquals(0, player.getOrdinal());
+    }
+
+    @Test
+    public void testToString() {
+        Player player = new Player(0);
+        assertEquals("0,[]", player.toString());
+
+        Deck deck = new ArbitraryDeck();
+        deck.create(1, 2);
+
+        player.collect(deck.deal());
+        player.collect(deck.deal());
+
+        assertEquals("0,[0,0, 0,1]", player.toString());
+    }
+
+    @Test
+    public void testCollect() {
 
         Deck deck = new ArbitraryDeck();
         deck.create(1, 3);
@@ -33,7 +54,28 @@ public class PlayerTest {
     }
 
     @Test
-    public void testPlay() throws Exception {
+    public void testShow() {
+        Deck deck = new ArbitraryDeck();
+        deck.create(1, 1);
+
+        Player player = new Player(0);
+
+        assertNull(player.show());
+
+        final Card card = deck.deal();
+        player.collect(card);
+
+        assertEquals(1, player.getHand().size());
+
+        Card playerCard = player.show();
+
+        assertEquals(card, playerCard);
+
+        assertEquals(1, player.getHand().size());
+    }
+
+    @Test
+    public void testPlay() {
         Deck deck = new ArbitraryDeck();
         deck.create(1, 1);
 
@@ -46,5 +88,7 @@ public class PlayerTest {
         Card playerCard = player.play();
 
         assertEquals(card, playerCard);
+        assertEquals(0, player.getHand().size());
+        assertNull(player.play());
     }
 }

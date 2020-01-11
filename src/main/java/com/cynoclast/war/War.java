@@ -1,5 +1,8 @@
 package com.cynoclast.war;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -11,6 +14,8 @@ import java.util.Map;
  * @author Trampas Kirk
  */
 public class War {
+
+    private static final Logger LOGGER = LogManager.getLogger(War.class);
 
     /**
      * The card pile that would be in the middle of the table.
@@ -28,7 +33,7 @@ public class War {
             System.exit(1);
         }
         War war = new War();
-//        war.play(4, 13, 2);
+//        war.play(1, 1, 1);
         war.play(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
     }
 
@@ -80,6 +85,8 @@ public class War {
             player.collect(deck.deal());
         }
 
+        LOGGER.debug("Players: {}", players);
+
         // if we only have one player, they'll win immediately
         Player winner = findWinner(numberOfCards);
 
@@ -96,6 +103,7 @@ public class War {
             Player winnerOfRound = findWinnerOfRound(cardsInPlay);
             if (winnerOfRound == null) {
                 //war
+                LOGGER.debug("WAR");
                 for (Player currentPlayer : players) {
                     if (currentPlayer.show() != null) {
                         pile.add(currentPlayer.play()); // card that caused 'war'
@@ -157,29 +165,31 @@ public class War {
     /**
      * Uses a map of card to player instead of player to card since the winner is determined by card this makes the lookup easy.
      *
-     * @param playerCards the cards in play for the current round
+     * @param cardsInPlay the cards in play for the current round
      * @return the winner of the round, or null if there's a tie for the highest card by rank
      */
-    private Player findWinnerOfRound(Map<Card, Player> playerCards) {
-        if (playerCards == null) {
+    Player findWinnerOfRound(Map<Card, Player> cardsInPlay) {
+        if (cardsInPlay == null) {
             return null;
         }
 
+        LOGGER.debug("Cards in play: {}", cardsInPlay);
+
         // find highest card
-        List<Card> cards = new ArrayList<>(playerCards.keySet());
+        List<Card> cards = new ArrayList<>(cardsInPlay.keySet());
         cards.sort(new SortByRankComparator().reversed());
 
         Card highest = cards.get(0);
 
-        if (playerCards.size() == 1) {
-            return playerCards.get(highest); // only one card in play, so that player wins
+        if (cardsInPlay.size() == 1) {
+            return cardsInPlay.get(highest); // only one card in play, so that player wins
         }
 
         Card checkCard = cards.get(1); // since these are sorted if there's a tie it will be the next card
         if (checkCard.getRank() == highest.getRank()) {
             return null; // go to war (even if there are other possible ties)
         } else {
-            return playerCards.get(highest);
+            return cardsInPlay.get(highest);
         }
     }
 
@@ -200,5 +210,9 @@ public class War {
             }
         }
         return null;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
     }
 }

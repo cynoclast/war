@@ -1,4 +1,4 @@
-package war;
+package com.cynoclast.war;
 
 import java.util.ArrayList;
 import java.util.Collections;

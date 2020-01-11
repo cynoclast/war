@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abfbf438-cb91-44a9-a304-8943589a5bbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/war/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/war/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/war/War.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/ArbitraryDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/ArbitraryDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/SortByRankComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/SortByRankComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/war/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/war/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/war/ArbitraryDeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/ArbitraryDeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/war/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/PlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +112,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -117,18 +125,21 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="war" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.cynoclast.war" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.War">
     <configuration name="War" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="war.War" />
+      <option name="MAIN_CLASS_NAME" value="com.cynoclast.war.War" />
       <module name="war.main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="war.*" />
+          <option name="PATTERN" value="com.cynoclast.war.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -278,12 +289,20 @@
       <option name="project" value="LOCAL" />
       <updated>1578709245993</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updates some docs&#10;adds boundary conditions&#10;clarifies a variable&#10;corrects a typo&#10;adds gradle.properties">
+      <created>1578711545341</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578711545341</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removes lombok stuff that didn't work&#10;fixes concurrent modification exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="removes lombok stuff that didn't work&#10;fixes concurrent modification exception" />
+    <MESSAGE value="updates some docs&#10;adds boundary conditions&#10;clarifies a variable&#10;corrects a typo&#10;adds gradle.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates some docs&#10;adds boundary conditions&#10;clarifies a variable&#10;corrects a typo&#10;adds gradle.properties" />
   </component>
   <component name="WindowStateProjectService">
     <state x="347" y="127" key="#Project_Structure" timestamp="1578689002203">
@@ -294,10 +313,14 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="487" y="169" key="#com.intellij.ide.util.MemberChooser/54.23.1386.877@54.23.1386.877" timestamp="1578707446123" />
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578709245703">
+    <state x="513" y="328" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578711886938">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578709245703" />
+    <state x="513" y="328" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/54.23.1386.877@54.23.1386.877" timestamp="1578711886938" />
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578711544924">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578711544924" />
     <state x="175" y="141" width="1186" height="677" key="DiffContextDialog" timestamp="1578709193982">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -342,6 +365,10 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="347" y="201" key="Vcs.Push.Dialog.v2/54.23.1386.877@54.23.1386.877" timestamp="1578709250864" />
+    <state x="530" y="251" key="chooseDestDirectoryDialog" timestamp="1578711876012">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="530" y="251" key="chooseDestDirectoryDialog/54.23.1386.877@54.23.1386.877" timestamp="1578711876012" />
     <state x="154" y="123" width="1186" height="677" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1578709118665">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -363,17 +390,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/war/ArbitraryDeckTest.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/cynoclast/war/ArbitraryDeckTest.java</url>
+          <line>36</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/war/War.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java</url>
           <line>177</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/war/War.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java</url>
           <line>87</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>

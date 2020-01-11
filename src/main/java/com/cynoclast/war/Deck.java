@@ -1,4 +1,4 @@
-package war;
+package com.cynoclast.war;
 
 /**
  * @author Trampas Kirk

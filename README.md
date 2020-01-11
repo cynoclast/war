@@ -12,7 +12,7 @@ Accepts arbitrary card decks from 2 to java.lang.Integer.MAX_VALUE
 
 ## Example to run:
 
-`java -classpath ./build/libs/war-1.0.jar war.War 4 13 2`
+`java -classpath ./build/libs/war-1.0.jar com.cynoclast.war.War 4 13 2`
 
 ## Notes
 

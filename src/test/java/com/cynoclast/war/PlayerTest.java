@@ -1,4 +1,4 @@
-package war;
+package com.cynoclast.war;
 
 import org.junit.Test;
 

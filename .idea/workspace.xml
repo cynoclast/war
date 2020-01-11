@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abfbf438-cb91-44a9-a304-8943589a5bbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/SortByRankComparatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/WarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/ArbitraryDeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/ArbitraryDeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/SortByRankComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/SortByRankComparatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,14 +292,35 @@
       <option name="project" value="LOCAL" />
       <updated>1578712044284</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adds a little bit of logging via log4j2&#10;removes some unused methods&#10;adds a bunch of tests">
+      <created>1578716394491</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578716394491</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="removes lombok stuff that didn't work&#10;fixes concurrent modification exception" />
     <MESSAGE value="updates some docs&#10;adds boundary conditions&#10;clarifies a variable&#10;corrects a typo&#10;adds gradle.properties" />
     <MESSAGE value="moved stuff to more standard packages&#10;updated docs&#10;deleted gradle base App classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved stuff to more standard packages&#10;updated docs&#10;deleted gradle base App classes" />
+    <MESSAGE value="adds a little bit of logging via log4j2&#10;removes some unused methods&#10;adds a bunch of tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds a little bit of logging via log4j2&#10;removes some unused methods&#10;adds a bunch of tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="347" y="127" key="#Project_Structure" timestamp="1578714867333">
@@ -324,14 +339,14 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="513" y="328" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/54.23.1386.877@54.23.1386.877" timestamp="1578711886938" />
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578712043891">
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578716394183">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578712043891" />
-    <state x="175" y="141" width="1186" height="677" key="DiffContextDialog" timestamp="1578709193982">
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578716394183" />
+    <state x="175" y="141" width="1186" height="677" key="DiffContextDialog" timestamp="1578716339997">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="175" y="141" width="1186" height="677" key="DiffContextDialog/54.23.1386.877@54.23.1386.877" timestamp="1578709193982" />
+    <state x="175" y="141" width="1186" height="677" key="DiffContextDialog/54.23.1386.877@54.23.1386.877" timestamp="1578716339997" />
     <state width="1344" height="342" key="GridCell.Tab.0.bottom" timestamp="1578716253104">
       <screen x="54" y="23" width="1386" height="877" />
     </state>

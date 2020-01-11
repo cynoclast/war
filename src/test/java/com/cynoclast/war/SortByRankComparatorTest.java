@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class SortByRankComparatorTest {
 
     @Test
-    public void testCompare_asc() throws Exception {
+    public void testCompare_asc() {
         SortByRankComparator sortByRankComparator = new SortByRankComparator();
         Card card1 = new Card(0, 0);
         Card card2 = new Card(0, 1);
@@ -20,7 +20,7 @@ public class SortByRankComparatorTest {
     }
 
     @Test
-    public void testCompare_eq() throws Exception {
+    public void testCompare_eq() {
         SortByRankComparator sortByRankComparator = new SortByRankComparator();
         Card card1 = new Card(0, 0);
         Card card2 = new Card(0, 0);
@@ -30,7 +30,7 @@ public class SortByRankComparatorTest {
     }
 
     @Test
-    public void testCompare_desc() throws Exception {
+    public void testCompare_desc() {
         SortByRankComparator sortByRankComparator = new SortByRankComparator();
         Card card1 = new Card(0, 1);
         Card card2 = new Card(0, 0);

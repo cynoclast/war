@@ -12,7 +12,7 @@ import static org.junit.Assert.assertNull;
 public class ArbitraryDeckTest {
 
     @Test
-    public void testCreate() throws Exception {
+    public void testCreate() {
         Deck deck = new ArbitraryDeck();
         deck.create(1, 1);
 
@@ -23,7 +23,7 @@ public class ArbitraryDeckTest {
     }
 
     @Test
-    public void testShuffle() throws Exception {
+    public void testShuffle() {
         ArbitraryDeck deck = new ArbitraryDeck();
         deck.create(4, 13);
 
@@ -37,12 +37,13 @@ public class ArbitraryDeckTest {
     }
 
     @Test
-    public void testDeal() throws Exception {
+    public void testDeal() {
         Deck deck = new ArbitraryDeck();
         deck.create(1, 1);
 
         Card card = deck.deal();
         assertNotNull(card);
         card = deck.deal();
-        assertNull(card);    }
+        assertNull(card);
+    }
 }

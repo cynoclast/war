@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="abfbf438-cb91-44a9-a304-8943589a5bbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/ArbitraryDeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/ArbitraryDeckTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/SortByRankComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cynoclast/war/SortByRankComparatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="327" />
+    <option name="myElementSize" value="328" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -114,7 +115,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.War">
+  <component name="RunManager" selected="Gradle.Tests in 'war.test'">
     <configuration name="War" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cynoclast.war.War" />
       <module name="war.main" />
@@ -240,8 +241,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.War" />
         <item itemvalue="Gradle.Tests in 'war.test'" />
+        <item itemvalue="Application.War" />
         <item itemvalue="Gradle.WarTest" />
         <item itemvalue="Gradle.PlayerTest.testToString" />
         <item itemvalue="Gradle.PlayerTest" />
@@ -299,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578716394491</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="minor code cleanup">
+      <created>1578717589407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578717589407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +328,8 @@
     <MESSAGE value="updates some docs&#10;adds boundary conditions&#10;clarifies a variable&#10;corrects a typo&#10;adds gradle.properties" />
     <MESSAGE value="moved stuff to more standard packages&#10;updated docs&#10;deleted gradle base App classes" />
     <MESSAGE value="adds a little bit of logging via log4j2&#10;removes some unused methods&#10;adds a bunch of tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds a little bit of logging via log4j2&#10;removes some unused methods&#10;adds a bunch of tests" />
+    <MESSAGE value="minor code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor code cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="347" y="127" key="#Project_Structure" timestamp="1578714867333">
@@ -339,46 +348,46 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="513" y="328" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/54.23.1386.877@54.23.1386.877" timestamp="1578711886938" />
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578716394183">
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2" timestamp="1578717589123">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578716394183" />
+    <state x="100" y="65" width="1023" height="793" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578717589123" />
     <state x="175" y="141" width="1186" height="677" key="DiffContextDialog" timestamp="1578716339997">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="175" y="141" width="1186" height="677" key="DiffContextDialog/54.23.1386.877@54.23.1386.877" timestamp="1578716339997" />
-    <state width="1344" height="342" key="GridCell.Tab.0.bottom" timestamp="1578716253104">
+    <state width="887" height="269" key="GridCell.Tab.0.bottom" timestamp="1578791125964">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="342" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578716253104" />
-    <state width="1344" height="342" key="GridCell.Tab.0.center" timestamp="1578716253104">
+    <state width="887" height="269" key="GridCell.Tab.0.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578791125964" />
+    <state width="887" height="269" key="GridCell.Tab.0.center" timestamp="1578791125963">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="342" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1578716253104" />
-    <state width="1344" height="342" key="GridCell.Tab.0.left" timestamp="1578716253103">
+    <state width="887" height="269" key="GridCell.Tab.0.center/54.23.1386.877@54.23.1386.877" timestamp="1578791125963" />
+    <state width="887" height="269" key="GridCell.Tab.0.left" timestamp="1578791125963">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="342" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1578716253103" />
-    <state width="1344" height="342" key="GridCell.Tab.0.right" timestamp="1578716253104">
+    <state width="887" height="269" key="GridCell.Tab.0.left/54.23.1386.877@54.23.1386.877" timestamp="1578791125963" />
+    <state width="887" height="269" key="GridCell.Tab.0.right" timestamp="1578791125964">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1344" height="342" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1578716253104" />
-    <state width="1122" height="276" key="GridCell.Tab.1.bottom" timestamp="1578709670158">
+    <state width="887" height="269" key="GridCell.Tab.0.right/54.23.1386.877@54.23.1386.877" timestamp="1578791125964" />
+    <state width="887" height="276" key="GridCell.Tab.1.bottom" timestamp="1578790946009">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="276" key="GridCell.Tab.1.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578709670158" />
-    <state width="1122" height="276" key="GridCell.Tab.1.center" timestamp="1578709670157">
+    <state width="887" height="276" key="GridCell.Tab.1.bottom/54.23.1386.877@54.23.1386.877" timestamp="1578790946009" />
+    <state width="887" height="276" key="GridCell.Tab.1.center" timestamp="1578790946008">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="276" key="GridCell.Tab.1.center/54.23.1386.877@54.23.1386.877" timestamp="1578709670157" />
-    <state width="1122" height="276" key="GridCell.Tab.1.left" timestamp="1578709670157">
+    <state width="887" height="276" key="GridCell.Tab.1.center/54.23.1386.877@54.23.1386.877" timestamp="1578790946008" />
+    <state width="887" height="276" key="GridCell.Tab.1.left" timestamp="1578790946007">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="276" key="GridCell.Tab.1.left/54.23.1386.877@54.23.1386.877" timestamp="1578709670157" />
-    <state width="1122" height="276" key="GridCell.Tab.1.right" timestamp="1578709670158">
+    <state width="887" height="276" key="GridCell.Tab.1.left/54.23.1386.877@54.23.1386.877" timestamp="1578790946007" />
+    <state width="887" height="276" key="GridCell.Tab.1.right" timestamp="1578790946008">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state width="1122" height="276" key="GridCell.Tab.1.right/54.23.1386.877@54.23.1386.877" timestamp="1578709670158" />
+    <state width="887" height="276" key="GridCell.Tab.1.right/54.23.1386.877@54.23.1386.877" timestamp="1578790946008" />
     <state x="248" y="63" key="SettingsEditor" timestamp="1578690669327">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -407,10 +416,10 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="844" y="214" key="com.intellij.testIntegration.createTest.CreateTestDialog/54.23.1386.877@54.23.1386.877" timestamp="1578712666485" />
-    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1578714050195">
+    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1578790716110">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup/54.23.1386.877@54.23.1386.877" timestamp="1578714050195" />
+    <state x="412" y="213" width="670" height="676" key="search.everywhere.popup/54.23.1386.877@54.23.1386.877" timestamp="1578790716110" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -422,19 +431,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java</url>
-          <line>177</line>
-          <option name="timeStamp" value="6" />
+          <line>90</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="7" />
+          <line>186</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cynoclast/war/War.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/war$Tests_in__war_test_.ic" NAME="Tests in 'war.test' Coverage Results" MODIFIED="1578714442347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/war$Tests_in__war_test_.ic" NAME="Tests in 'war.test' Coverage Results" MODIFIED="1578790945915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/war$PlayerTest_testToString.ic" NAME="PlayerTest.testToString Coverage Results" MODIFIED="1578713648887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/war$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1578713488857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/war$SortByRankComparatorTest.ic" NAME="SortByRankComparatorTest Coverage Results" MODIFIED="1578712918907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

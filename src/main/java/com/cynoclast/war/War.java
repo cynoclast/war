@@ -29,11 +29,11 @@ public class War {
 
     public static void main(String[] args) {
         if (args.length != 3) {
-            System.out.println("Usage: war.War <number of suits> <number of ranks> <number of players>");
+            System.out.println("Usage: War <number of suits> <number of ranks> <number of players>");
             System.exit(1);
         }
         War war = new War();
-//        war.play(1, 1, 1);
+//        war.play(2, 0x7fffffff, 2);
         war.play(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
     }
 
@@ -50,7 +50,7 @@ public class War {
      */
     public void play(int numberOfSuits, int numberOfRanks, int numberOfPlayers) {
 
-        if (numberOfRanks == 1 && numberOfSuits > 1 && numberOfPlayers > 1) {
+        if (numberOfRanks == 1 && numberOfSuits > 1 && numberOfPlayers >= 2) {
             System.err.println("\nA deck of only 1 rank will cause infinite war/a draw. (The only winning move is not to play.)");
             System.exit(0);
         }
@@ -58,12 +58,12 @@ public class War {
         int numberOfCards = numberOfSuits * numberOfRanks;
 
         if (numberOfCards <= 0) {
-            System.err.println("\nMust have some cards in the deck.");
+            System.err.println("\nMust have some cards in the deck (possible integer overflow).");
             System.exit(1);
         }
 
-        if (numberOfPlayers < 1) {
-            System.err.println("\nMust have at least one player.");
+        if (numberOfPlayers < 2) {
+            System.err.println("\nMust have at least two players.");
             System.exit(1);
         }
 
@@ -87,7 +87,7 @@ public class War {
 
         LOGGER.debug("Players: {}", players);
 
-        // if we only have one player, they'll win immediately
+        // if we only have one card, first player wins immediately
         Player winner = findWinner(numberOfCards);
 
         // play
@@ -150,15 +150,14 @@ public class War {
     }
 
     private void removePlayersWithNoCards() {
-        List<Integer> playersWithNoCards = new ArrayList<>();
+        List<Player> playersWithNoCards = new ArrayList<>();
         for (Player player : players) {
             if (player.show() == null) {
-                playersWithNoCards.add(player.getOrdinal());
+                playersWithNoCards.add(player);
             }
         }
-        for (Integer playerOrdinal : playersWithNoCards) {
-            //noinspection SuspiciousMethodCalls
-            players.remove(playerOrdinal);
+        for (Player playerWithNoCards : playersWithNoCards) {
+            players.remove(playerWithNoCards);
         }
     }
 

@@ -4,13 +4,13 @@ Simulates the card game War: http://en.wikipedia.org/wiki/War_(card_game)
 
 Players are numbered 0-n
 
-Accepts arbitrary card decks from 2 to java.lang.Integer.MAX_VALUE
+Accepts arbitrary card decks from 2 to java.lang.Integer.MAX_VALUE total cards
 
 ## Build:
 
 `./gradlew clean fatJar`
 
-## Example to run:
+## Sample command:
 
 `java -classpath ./build/libs/war-1.0.jar com.cynoclast.war.War 4 13 2`
 
